@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
 
 @import "embla.css";
 
@@ -89,162 +90,6 @@ h4{
   clear: both;
 }
 
-.time-axis{
-  width: 800px;
-  /* height: 700px; */
-  border:2px solid rgba(8, 8, 8, 0.966);
-  margin:50px auto 0px;
-  margin-top: 10%;
-}
-
-
-
-.time-axis .left{
-  width: 400px;
-  /* height: 300px; */
-  /* background-color: rgb(21, 218, 253); */
-  float: left;
-  border-right: 4px solid #ffd438;
-  position: relative;
-}
-
-.time-axis .right{
-  width: 400px;
-  /* height: 300px; */
-  /* background-color: rgb(36, 207, 230); */
-  float: right;
-  border-left: 4px solid #ffd438;
-  position: relative;
-
-}
-
-.time-axis .dot{
-  width: 20px;
-  height: 20px;
-  background-color: #fcfcf7;
-  display: block;
-  border: 2px solid #fdce22;
-  border-radius: 12px;
-  position: absolute;
-  top: 50%;
-  margin-top: -12px;
-
-}
-
-.time-axis .left .dot{
-  right: -12px;
-}
-
-.time-axis .right .dot{
-  left:-12px;
-}
-
-
-
-
-
-.time-axis .con{
-  /* height: 200px; */
-  /* background-color: #14e625; */
-  padding: 15px;
-  border-radius: 10px;
-}
-
-.time-axis .left .con{
-  margin-right: 30px;
-}
-
-.time-axis .right .con{
-  margin-left: 30px;
-}
-
-.time-axis .con h3{
-  /* border: 1px solid red; */
-  font-weight: 600;
-  font-size: 40;
-  text-align: center;
-  color: #f2f2f3;
- 
-}
-
-.time-axis .con h3 span{
-  font-size: 45px;
-  font-family: Arial;
-  font-weight: 1000;
-  color: #6e0cca;
-}
-
-.time-axis .con h4{
-  /* border: 1px solid rgb(12, 200, 224); */
-  font-weight: 400;
-  text-align: center;
-  margin-top: 30px;
-  color: #f2f2f3;
- 
-}
-
-.con h5{
-  /* border: 1px solid rgb(12, 200, 224); */
-  font-family: 'Lato', sans-serif;
-  padding: 10px;
-  margin-top: -5%;
-  margin-bottom: -30%;
-  font-weight: 500;
-  text-align: center;
-  color: #f2f2f3;
- 
-}
-
-.con h6{
-  /* border: 1px solid red; */
-  font-family: 'Lato', sans-serif;
-  padding: 10px;
-  margin-top: 33%;
-  margin-bottom: -30%;
-  font-weight: 500;
-  text-align: center;
-  color: #f2f2f3;
- 
-}
-
-.fontstyle1{
-  font-family: 'Lato', sans-serif;
-  font-weight: 500;
-  font-size: large;
-  color: white;
-}
-
-.fontstyle2{
-  font-family:  'Ubuntu Mono', monospace;
-  
-}
-
-
-.dot1{
-  width: 20px;
-  height: 20px;
-  background-color: #f2f2f3;
-  display: block;
-  border: 2px solid #fdce22;
-  border-radius: 12px;
-  position: absolute;
-  right: -12px;
-  top: 0%;
-  margin-top: -12px;
-}
-
-.dotl{
-  width: 20px;
-  height: 20px;
-  background-color: #f2f2f3;
-  display: block;
-  border: 2px solid #fdce22;
-  border-radius: 12px;
-  position: absolute;
-  left: -12px;
-  top: 100%;
-  margin-top: -12px;
-}
 
 .headtext{
   font-family:'Montserrat', sans-serif;
@@ -271,7 +116,8 @@ legend{
   text-align: center;
   font-family:'Montserrat', sans-serif;
   font-weight: 800;
-  padding:1%;
+  padding: 0;
+  border: 0;
 }
 
 .welcome{
@@ -281,3 +127,83 @@ legend{
   font-size: 1.8em;
   font-weight: 600;
 }
+.background{
+  background-image: url(/images/background.png); 
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+  -moz-background-size:100% 100%;
+
+}
+.pixeltextR{
+  text-align: right;
+  font-family: "Press Start 2P", "VT323";
+  color: rgb(5, 5, 5);
+}
+.about{
+  margin: 0;
+  width: 1500px;
+  height: 1000px;
+  /* border: 2px solid red; */
+  margin: 100px auto 0px;
+  position: relative;
+}
+.about .left1{
+  width: 636px;
+  height: 636px;
+  left: 0px;
+  top: 20%;
+  position: absolute;
+  background: url(/images/moonbat.gif);
+}
+.about .right1{
+  width: 636px;
+  height: 636px;
+  /* border: 2px solid red; */
+  top: 20%;
+  position: absolute;
+  right: 100px;
+}
+.about .right1 .titlep{
+ text-align: center;
+ font-weight: 500;
+ font-size: x-large;
+ font-family: "Press Start 2P", "VT323";
+ color: white;
+}
+
+.about .right1 .textp{
+  text-align: center;
+  font-weight: 100;
+  font-size: small;
+  font-family: "Press Start 2P", "VT323";
+  color: white;
+ }
+
+ .title{
+  text-align: center;
+ font-weight: 500;
+ font-size: x-large;
+ font-family: "Press Start 2P", "VT323";
+ color: white;
+ }
+
+ .text{
+  text-align: center;
+  font-weight: 100;
+  font-size: small;
+  font-family: "Press Start 2P", "VT323";
+  color: white;
+ }
+
+ .text1{
+  text-align: center;
+  font-weight: 100;
+  font-size: small;
+  font-family: "Press Start 2P", "VT323";
+  color: black;
+ }
+
+ .right1 .linkbutton{
+  margin-left: 190px;
+ }
+

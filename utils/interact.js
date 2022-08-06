@@ -1,9 +1,11 @@
 const { createAlchemyWeb3 } = require("@alch/alchemy-web3");
 const web3 = createAlchemyWeb3(process.env.NEXT_PUBLIC_API_URL);
 
-const contract = require("../artifacts/contracts/EmojiNft.sol/EmojiNft1.json");
-const contractAddress = "0x2D91cE18Fa6209Df022322244440fb90263552b0";
+const contract = require("../artifacts/contracts/Moonknight.sol/Moonknight.json");
+const contractAddress = "0x66208950e78E36050B193FC17efB7f7CED1A246A";
 const nftContract = new web3.eth.Contract(contract.abi, contractAddress);
+const proof = ["0x91c2d1c8acc74826844a73ba1391c1429dcf6583bf7472070991fc214f4613fb"];
+
 
 export const connectWallet = async () => {
   if (window.ethereum) {
@@ -62,7 +64,7 @@ export const getCurrentWalletConnected = async () => {
       } else {
         return {
           address: "",
-          status: "😞 please connect wallet."
+          status: ""
         };
       }
     } catch (err) {
@@ -97,7 +99,12 @@ export const getCurrentWalletConnected = async () => {
 // Contract Methods
 
 export const getMaxMintAmount = async () => {
-  const result = await nftContract.methods.maxMintAmount().call();
+  const result = await nftContract.methods.publicsaleMaxMint().call();
+  return result;
+};
+
+export const getMaxmlMintAmount = async () => {
+  const result = await nftContract.methods.mlsaleMaxMint().call();
   return result;
 };
 
@@ -107,13 +114,13 @@ export const getTotalSupply = async () => {
 };
 
 export const getNftPrice = async () => {
-  const result = await nftContract.methods.publicPrice().call();
+  const result = await nftContract.methods.publicSalePrice().call();
   const resultEther = web3.utils.fromWei(result, "ether");
   return resultEther;
 };
 
 export const getPresaleNftPrice = async () => {
-  const result = await nftContract.methods.presalePrice().call();
+  const result = await nftContract.methods.mlSalePrice().call();
   const resultEther = web3.utils.fromWei(result, "ether");
   return resultEther;
 };
@@ -123,7 +130,12 @@ export const getSaleState = async () => {
   return result;
 };
 
-export const mintNFT = async (mintAmount) => {
+export const getWLSaleState = async () => {
+  const result = await nftContract.methods.mlsaleIsActive().call();
+  return result;
+};
+
+export const publicSaleMint = async (mintAmount) => {
   if (!window.ethereum.selectedAddress) {
     return {
       success: false,
@@ -140,11 +152,11 @@ export const mintNFT = async (mintAmount) => {
   const transactionParameters = {
     to: contractAddress, // Required except during contract publications.
     from: window.ethereum.selectedAddress, // must match user's active address.
-    value: parseInt(web3.utils.toWei("0.01", "ether") * mintAmount).toString(
+    value: parseInt(web3.utils.toWei("0.005", "ether") * mintAmount).toString(
       16
     ), // hex
     gasLimit: "0",
-    data: nftContract.methods.mintNft(mintAmount).encodeABI(), //make call to NFT smart contract
+    data: nftContract.methods.publicSaleMint(window.ethereum.selectedAddress, mintAmount).encodeABI(), //make call to NFT smart contract
   };
   //sign the transaction via Metamask
   try {
@@ -164,6 +176,50 @@ export const mintNFT = async (mintAmount) => {
       status: "😥 Something went wrong: " + error.message,
     };
   }
+  };
+
+  //wlmint
+  export const mlmint = async (mintAmount) => {
+    if (!window.ethereum.selectedAddress) {
+      return {
+        success: false,
+        status: (
+          <p>
+            🦊 Connect to Metamask using{" "}
+            <span className="px-2 text-purple-600">Connect Wallet</span> button.
+          </p>
+        ),
+      };
+    }
+  
+    //set up your Ethereum transaction
+    const transactionParameters = {
+      to: contractAddress, // Required except during contract publications.
+      from: window.ethereum.selectedAddress, // must match user's active address.
+      value: parseInt(web3.utils.toWei("0", "ether") * mintAmount).toString(
+        16
+      ), // hex
+      gasLimit: "0",
+      data: nftContract.methods.whitelistMint(window.ethereum.selectedAddress, mintAmount, proof).encodeABI(), //make call to NFT smart contract
+    };
+    //sign the transaction via Metamask
+    try {
+      const txHash = await window.ethereum.request({
+        method: "eth_sendTransaction",
+        params: [transactionParameters],
+      });
+      return {
+        success: true,
+        status:
+          "✅ Check out your transaction on Etherscan: https://rinkeby.etherscan.io/tx/" +
+          txHash,
+      };
+    } catch (error) {
+      return {
+        success: false,
+        status: "😥 Something went wrong: " + error.message,
+      };
+    }
 
   
 
