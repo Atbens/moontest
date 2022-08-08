@@ -86,7 +86,7 @@ const Hero = () => {
 
 
   return (
-    <main id="main" className="h-screen py-16  py-20  rbackground background legend">
+    <main id="main" className="main    background legend">
       <div className="container max-w-6xl mx-auto flex flex-col  pt-4 ">
         <div className="flex flex-col items-center ">
         <div className="welcome px-4 py-4 mt-8 text-center title">Text
