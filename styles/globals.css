@@ -71,7 +71,7 @@ html {
 }
 
 .rbackground{
-  /* height: auto; */
+  height: auto;
   background-color: rgba(8, 8, 8, 0.966);
 }
 
@@ -126,13 +126,7 @@ legend{
   font-size: 1.8em;
   font-weight: 600;
 }
-.background{
-  background-image: url(/images/background.png); 
-  background-repeat:no-repeat;
-  background-size:100% 100%;
- 
 
-}
 .pixeltextR{
   text-align: right;
   font-family: "Press Start 2P", "VT323";
@@ -206,11 +200,19 @@ legend{
   margin-left: 190px;
  }
 
-.main{ 
-    margin: 0;
+.main1{ 
+    /* margin: 0; */
     width: 1848px;
-    height: 1086px;
+    height: 800px;
     /* border: 2px solid red; */
     /* margin: 100px auto 0px; */
     position: relative;
+}
+.mintcenter{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  /* border: 3px solid #73AD21; */
+  
 }

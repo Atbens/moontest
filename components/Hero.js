@@ -86,12 +86,18 @@ const Hero = () => {
 
 
   return (
-    <main id="main" className="main    background legend">
-      <div className="container max-w-6xl mx-auto flex flex-col  pt-4 ">
-        <div className="flex flex-col items-center ">
-        <div className="welcome px-4 py-4 mt-8 text-center title">Text
-          <h5 className="text-2xl py-5  text-center text">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        <main id="main" className="main1  ">
+          <Image
+            src="/images/background.png"
+            width="1848"
+            height="800"
+            className="rounded-md"
+          />
+            <div className="flex flex-col items-center text-center mintcenter">
+         <div className=" text-center title">Text
+          <h5 className=" text-center text">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
             </h5>
+
           
           </div>
           
@@ -100,7 +106,7 @@ const Hero = () => {
            {isWLSaleActive ? (
             <>
               {/* Wl Minted NFT Ratio */}
-              <p className="bg-gray-100 rounded-md text-gray-800 font-extrabold text-lg my-4 py-1 px-3 text1">
+              <p className="bg-gray-100 rounded-md text-gray-800 font-extrabold text-lg mt-10 my-5 py-1 px-3 text1">
                 <span className="text-purple-600">{`${totalSupply}`}</span > /
                 6666
               </p>
@@ -255,7 +261,7 @@ const Hero = () => {
 
          
         </div>
-      </div>
+    
     </main>
   );
 };
