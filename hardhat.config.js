@@ -1,8 +1,6 @@
 require("dotenv").config();
 require("@nomiclabs/hardhat-etherscan");
 require("@nomiclabs/hardhat-waffle");
-const dotenv = require("dotenv");
-dotenv.config();
 
 
 task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
