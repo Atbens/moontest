@@ -87,21 +87,10 @@ const Hero = () => {
 
   return (
         <main id="main" className="main1  ">
-          <Image
-            src="/images/background.png"
-            width="1848"
-            height="800"
-            className="rounded-md"
-          />
+            <div className="background"></div>
             <div className="flex flex-col items-center text-center mintcenter">
-         <div className=" text-center title">Text
-          <h5 className=" text-center text">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-            </h5>
-
-          
-          </div>
-          
-
+        
+ 
 
            {isWLSaleActive ? (
             <>
@@ -169,9 +158,9 @@ const Hero = () => {
               </button>
             </>
           ) : (
-            <p className="text-white text-2xl mt-8">
+            <p className="text-white mt-8 textx">
               {" "}
-              
+              Moonlist Sale is not active yet!
             </p>
           )}
 

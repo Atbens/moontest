@@ -8,15 +8,13 @@ const About = () => {
       </div>
       <div className="right1">
         <div className="titlep">
-          Test
+          Welcome to the Moonknight&apos;s Word
         </div>
 
-      <div className="textp mt-6">
-        aaaaaaaaaaaaaaaaaaaaaaaa
-        aaaaaaaaaaa
-        aaaaaaaaa
-        Test1
-        11
+      <div className="textp mt-6 py-3 px-3 textx">
+      We are glad that many friends have came to the Moon, but the arrival of earth species has had an impact on the Moon environment and something terrible is about to happen.
+      Moonknight will guard the Moon and Moontown.
+      Buy your own Moonknight and join the adventure!
 
 
   

@@ -141,18 +141,18 @@ legend{
   position: relative;
 }
 .about .left1{
-  width: 636px;
-  height: 636px;
+  width: 500px;
+  height: 500px;
   left: 0px;
   top: 20%;
   position: absolute;
-  background: url(/images/moonbat.gif);
+  background: url(/images/about.gif);
 }
 .about .right1{
   width: 636px;
   height: 636px;
   /* border: 2px solid red; */
-  top: 20%;
+  top: 25%;
   position: absolute;
   right: 100px;
 }
@@ -167,7 +167,15 @@ legend{
 .about .right1 .textp{
   text-align: center;
   font-weight: 100;
-  font-size: small;
+  font-size: medium;
+  font-family: "Press Start 2P", "VT323";
+  color: white;
+ }
+
+.textx{
+  text-align: center;
+  font-weight: 300;
+  font-size: x-large;
   font-family: "Press Start 2P", "VT323";
   color: white;
  }
@@ -210,9 +218,15 @@ legend{
 }
 .mintcenter{
     position: absolute;
-    top: 40%;
-    left: 50%;
+    top: 75%;
+    left: 49.1%;
     transform: translate(-50%, -50%);
   /* border: 3px solid #73AD21; */
-  
+}
+.background{
+  background-image: url(/images/background.png);
+  width: 1848px;
+  height: 800px;
+  /* top: 50%; */
+  /* border: 3px solid #73AD21; */
 }
