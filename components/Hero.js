@@ -158,7 +158,7 @@ const Hero = () => {
               </button>
             </>
           ) : (
-            <p className="text-white mt-8 textx">
+            <p className="text-white mt-8 textx text-center">
               {" "}
               Moonlist Sale is not active yet!
             </p>

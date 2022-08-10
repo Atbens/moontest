@@ -178,6 +178,8 @@ legend{
   font-size: x-large;
   font-family: "Press Start 2P", "VT323";
   color: white;
+  border: 2px solid red;
+
  }
 
  .title{
@@ -227,6 +229,8 @@ legend{
   background-image: url(/images/background.png);
   width: 1848px;
   height: 800px;
+  background-position: center;
   /* top: 50%; */
   /* border: 3px solid #73AD21; */
 }
+
