@@ -11,7 +11,7 @@ const About = () => {
           Welcome to the Moonknight&apos;s Word
         </div>
 
-      <div className="textp mt-6 py-3 px-3 textp">
+      <div className="textp mt-6 py-3 px-3">
       We are glad that many friends have came to the Moon, but the arrival of earth species has had an impact on the Moon environment and something terrible is about to happen.
       Moonknight will guard the Moon and Moontown.
       Buy your own Moonknight and join the adventure!

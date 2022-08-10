@@ -173,13 +173,14 @@ legend{
  }
 
 .textx{
+  position: relative;
   text-align: center;
+  left: 3%;
   font-weight: 300;
   font-size: x-large;
   font-family: "Press Start 2P", "VT323";
   color: white;
   border: 2px solid red;
-
  }
 
  .title{
