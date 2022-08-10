@@ -222,7 +222,7 @@ legend{
 .mintcenter{
     position: absolute;
     top: 75%;
-    left: 49.1%;
+    left: 50%;
     transform: translate(-50%, -50%);
   /* border: 3px solid #73AD21; */
 }
@@ -231,7 +231,6 @@ legend{
   width: 1848px;
   height: 800px;
   background-position: center;
-  /* top: 50%; */
   /* border: 3px solid #73AD21; */
 }
 
