@@ -152,7 +152,7 @@ export const publicSaleMint = async (mintAmount) => {
   const transactionParameters = {
     to: contractAddress, // Required except during contract publications.
     from: window.ethereum.selectedAddress, // must match user's active address.
-    value: parseInt(web3.utils.toWei("0.005", "ether") * mintAmount).toString(
+    value: parseInt(web3.utils.toWei("0.006", "ether") * mintAmount).toString(
       16
     ), // hex
     gasLimit: "0",

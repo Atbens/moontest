@@ -20,7 +20,7 @@ const Hero = () => {
   const [maxMintAmount, setMaxMintAmount] = useState(0);
   const [maxmlMintAmount, setMaxmlMintAmount] = useState(0);
   const [totalSupply, setTotalSupply] = useState(0);
-  const [nftPrice, setNftPrice] = useState("0.005");
+  const [nftPrice, setNftPrice] = useState("0.006");
   const [isWLSaleActive, setIsWLSaleActive] = useState(false);
   const [isSaleActive, setIsSaleActive] = useState(false);
   
@@ -160,7 +160,7 @@ const Hero = () => {
           ) : (
             <p className="textx">
               {""}
-              Moonlist Sale is not active yet!
+             
               
             </p>
           )}
@@ -227,7 +227,7 @@ const Hero = () => {
               </div>
 
               <h4 className="mt-4 font-semibold text-center text-white text">
-                {0.005} ETH{" "}
+                {0.006} ETH{" "}
                 <span className="text-sm text-gray-300"> + GAS</span>
               </h4>
 
