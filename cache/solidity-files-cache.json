@@ -6,7 +6,7 @@
       "contentHash": "a3c918ee87aea64a194460a49603e028",
       "sourceName": "contracts/ERC721A.sol",
       "solcConfig": {
-        "version": "0.8.12",
+        "version": "0.8.16",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -44,7 +44,7 @@
       "contentHash": "cbb191d17e77e7ddfeb4ffbcd1cc080e",
       "sourceName": "contracts/IERC721A.sol",
       "solcConfig": {
-        "version": "0.8.12",
+        "version": "0.8.16",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -75,11 +75,11 @@
       ]
     },
     "/home/atbens/textweb (copy)/contracts/Moonknight.sol": {
-      "lastModificationDate": 1659684953261,
-      "contentHash": "cab85640f881c8a1f864844c5d5eeb47",
+      "lastModificationDate": 1660740583965,
+      "contentHash": "5bc6d092285fd0b1a8f8a624d44c71d6",
       "sourceName": "contracts/Moonknight.sol",
       "solcConfig": {
-        "version": "0.8.12",
+        "version": "0.8.16",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -121,7 +121,7 @@
       "contentHash": "8398972af73b4e9e5ff3b31cad86234f",
       "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
       "solcConfig": {
-        "version": "0.8.12",
+        "version": "0.8.16",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -158,7 +158,7 @@
       "contentHash": "b919f5fbfe0ab75cc71f2d361eac7f4b",
       "sourceName": "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol",
       "solcConfig": {
-        "version": "0.8.12",
+        "version": "0.8.16",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -193,7 +193,7 @@
       "contentHash": "6f4509765ae026e31e8e4f0fb8f1f80f",
       "sourceName": "@openzeppelin/contracts/finance/PaymentSplitter.sol",
       "solcConfig": {
-        "version": "0.8.12",
+        "version": "0.8.16",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -232,7 +232,7 @@
       "contentHash": "a6a9d6c1f662e922b82c1ba4d81cdd48",
       "sourceName": "@openzeppelin/contracts/utils/math/SafeMath.sol",
       "solcConfig": {
-        "version": "0.8.12",
+        "version": "0.8.16",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -267,7 +267,7 @@
       "contentHash": "9c54c6c065d9e590fdcdd72c451425b9",
       "sourceName": "@openzeppelin/contracts/utils/Strings.sol",
       "solcConfig": {
-        "version": "0.8.12",
+        "version": "0.8.16",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -302,7 +302,7 @@
       "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
       "sourceName": "@openzeppelin/contracts/utils/Context.sol",
       "solcConfig": {
-        "version": "0.8.12",
+        "version": "0.8.16",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -337,7 +337,7 @@
       "contentHash": "76814c83c32552ed2b521c816b4d801a",
       "sourceName": "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
       "solcConfig": {
-        "version": "0.8.12",
+        "version": "0.8.16",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -375,7 +375,7 @@
       "contentHash": "ad714a6368ee7d43cded6bbe8af0b155",
       "sourceName": "@openzeppelin/contracts/utils/Address.sol",
       "solcConfig": {
-        "version": "0.8.12",
+        "version": "0.8.16",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -410,7 +410,7 @@
       "contentHash": "a44d1a099633876550ad2476b21bafbe",
       "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
       "solcConfig": {
-        "version": "0.8.12",
+        "version": "0.8.16",
         "settings": {
           "optimizer": {
             "enabled": false,

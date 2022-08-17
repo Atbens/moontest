@@ -14,11 +14,11 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
 
 
 module.exports = {
-  solidity: "0.8.12",
-  defaultNetwork: "rinkeby",
+  solidity: "0.8.16",
+  defaultNetwork: "Mainnet",
   networks: {
     hardhat: {},
-    rinkeby: {
+    Mainnet: {
       url: process.env.NEXT_PUBLIC_API_URL,
       accounts: [`0x${process.env.PRIVATE_KEY}`],
     },

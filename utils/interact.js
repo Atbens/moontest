@@ -2,9 +2,9 @@ const { createAlchemyWeb3 } = require("@alch/alchemy-web3");
 const web3 = createAlchemyWeb3(process.env.NEXT_PUBLIC_API_URL);
 
 const contract = require("../artifacts/contracts/Moonknight.sol/Moonknight.json");
-const contractAddress = "0x9781e8F05bFEecF879209ed83695A14fd2854cD8";
+const contractAddress = "0x44bad4E59D166c0ea466693ba68BB0DCC673A0e8";
 const nftContract = new web3.eth.Contract(contract.abi, contractAddress);
-const proof = ["0x1652f78d0f372fdb46183231a0f002ea74d3f1d4f54ad79483c6c26b1a94b461", "0xc16fae8149eb6788ee42bef27fc335b80f19198a10c5ea225f4d40ec141b3344", "0xfc1ee7a98429e85d247ce743ec06a71b67388a6e7cbb671d740ab57227ffad25", "0xd66cb139bbed814373a71d57caf32e346004bb9977a774a36b64cebe81498c16", "0xfdb872026a7f76296659840339b87e426da8c68462bfb7d9181c699031db48a6", "0x0489cad91cbafcb90feb49cd713bac0e20f8bb97d43b6f59500ae35713b734e7", "0x9fa2c1bb93615e88fef6736021cff83765f5bc70e19af13ed5c376eb1a91cf58", "0x9da140acf89b70a2b9b98a92c8b8e1675acabdfc43ca339db368c81c8c68608b", "0x232cb3cbb8ca03d17733364f7a05d04a085b6c34bca211cf1ac9db5d49dbe160"];
+const proof = ["0x487e25a70cc68e9472970212531888a5179505c4c516c20f1073970a168ed328", "0xfea41f919cd7661d2266c346e2deffcfd9d3e1bbf9904546a9ef862559c75686", "0x3b4f37af1265fdea2c08f01566aa5e6fd609c5c8faf764b96b82f3cc4b13e84f", "0x01bff8e0ef68f27a3bbff5f974ac750f3c96ef8b0a73d667299cdc8ce8053c6a", "0x8447c7ada5a1bf6ee01dfbdd8b0d4ade1471ce082a1d7611839246bcd670fe1b", "0x42a7b7a4d03ffcac233c57bfb4791b2880c8fc4423fba0586f985d54c525e0ca", "0x9b231225f96aab434fc7e36ab0e6e63349066a20686574c60dfc84e7838e95a7", "0x6ce377194e0e08b07e629516727be455d8d80ec30513d48f160754ba17e7d5a0", "0x6bf093815f9b6a21a96b1f46fe64795784c2e9fa5072e5c8faedc356858472a7"];
 
 
 export const connectWallet = async () => {
@@ -169,7 +169,7 @@ export const publicSaleMint = async (mintAmount) => {
     return {
       success: true,
       status:
-        "✅ Check out your transaction on Etherscan: https://rinkeby.etherscan.io/tx/" +
+        "✅ Check out your transaction on Etherscan: https://ethereum.etherscan.io/tx/" +
         txHash,
     };
   } catch (error) {
@@ -214,7 +214,7 @@ export const publicSaleMint = async (mintAmount) => {
       return {
         success: true,
         status:
-          "✅ Check out your transaction on Etherscan: https://rinkeby.etherscan.io/tx/" +
+          "✅ Check out your transaction on Etherscan: https://ethereum.etherscan.io/tx/" +
           txHash,
       };
     } catch (error) {

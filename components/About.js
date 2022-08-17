@@ -12,7 +12,7 @@ const About = () => {
         </div>
 
       <div className="textp mt-6 py-3 px-3">
-      TThe &apos;Black Fog&apos; means calamity in the Moon. The arrival of earth creatures disturbed the &apos;black fog&apos;. It swept the Moon. Become a Moon Knight, Evolve or Mutate, your choice!
+      The &apos;Black Fog&apos; means calamity in the Moon. The arrival of earth creatures disturbed the &apos;black fog&apos;. It swept the Moon. Become a Moon Knight, Evolve or Mutate, your choice!
       </div>
 
       <button

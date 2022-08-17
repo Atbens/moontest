@@ -9,7 +9,7 @@ import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
 import "./ERC721A.sol";
 
-contract testerc721a111 is Ownable, ERC721A, PaymentSplitter {
+contract Moonknight is Ownable, ERC721A, PaymentSplitter {
 
     using Strings for uint;
     using SafeMath for uint256;
@@ -26,7 +26,7 @@ contract testerc721a111 is Ownable, ERC721A, PaymentSplitter {
     uint private constant MAX_MOONLIST = 1000;
     uint private constant MAX_PUBLIC = 5466;
     uint private constant MAX_GIFT = 200;
-    uint256 public publicsaleMaxMint = 6666;
+    uint256 public publicsaleMaxMint = 3;
     uint256 public mlsaleMaxMint = 2;
 
     bool public saleIsActive = false;
@@ -38,7 +38,7 @@ contract testerc721a111 is Ownable, ERC721A, PaymentSplitter {
     string public notRevealedUri;
     string public baseExtension = ".json";
     string public baseURI;
-    uint public publicSalePrice = 0.0000066 ether;
+    uint public publicSalePrice = 0.0066 ether;
 
     bytes32 public merkleRoot;
 
@@ -50,7 +50,7 @@ contract testerc721a111 is Ownable, ERC721A, PaymentSplitter {
 
     uint private teamLength;
 
-    constructor(address[] memory _team, uint[] memory _teamShares, bytes32 _merkleRoot, string memory _baseURI, string memory initNotRevealedUri) ERC721A("Moonknight", "MKN")
+    constructor(address[] memory _team, uint[] memory _teamShares, bytes32 _merkleRoot, string memory _baseURI, string memory initNotRevealedUri) ERC721A("Moonknight", "MK")
     PaymentSplitter(_team, _teamShares) {
         merkleRoot = _merkleRoot;
         baseURI = _baseURI;
