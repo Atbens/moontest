@@ -168,18 +168,14 @@ const Hero = () => {
           ) : (
             <p className="mt-80 textx">
               {""}
-              Moonlist Sale is not active yet!
+             
             </p>
           )}
 
 
           {/* Status */}
 
-          {status && (
-            <div className="flex items-center justify-center px-4 py-4 mt-8 font-semibold text-white bg-red-400 rounded-md text">
-              {status}
-            </div>
-          )}
+         
 
           {isSaleActive ? (
             <>
@@ -255,6 +251,7 @@ const Hero = () => {
 
 
           {/* Status */}
+          
 
          
         </div>
