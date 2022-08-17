@@ -18,7 +18,7 @@ const About = () => {
       <button
         className="linkbutton mt-8 py-2 px-5 pixeltextR  uppercase bg-white border-b-4 border-grey rounded hover:bg-pink-500 hover:border-pink-600"
         >
-        <Link href="https://opensea.io">
+        <Link href="https://opensea.io/zh-CN/collection/moonknight-official">
                     <a className="pixeltextR">
                       {" "}
                       Buy on opensea
