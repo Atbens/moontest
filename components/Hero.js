@@ -13,6 +13,7 @@ import {
   getMaxmlMintAmount,
 } from "../utils/interact";
 
+
 const Hero = () => {
   const { status, setStatus } = useStatus();
 
@@ -20,7 +21,7 @@ const Hero = () => {
   const [maxMintAmount, setMaxMintAmount] = useState(0);
   const [maxmlMintAmount, setMaxmlMintAmount] = useState(0);
   const [totalSupply, setTotalSupply] = useState(0);
-  const [nftPrice, setNftPrice] = useState("0.006");
+  const [nftPrice, setNftPrice] = useState("0.0066");
   const [isWLSaleActive, setIsWLSaleActive] = useState(false);
   const [isSaleActive, setIsSaleActive] = useState(false);
   
@@ -83,14 +84,21 @@ const Hero = () => {
     updateTotalSupply();
   };
 
+  const CheckML = async () => {
+    const { status } = await checkML(count);
+    setStatus(status);
+
+  };
+
 
 
   return (
-        <main id="main" className="main1  ">
-            <div className="background"></div>
+        <main id="main" className="main1">
+            <div className="background">
+            <div className="eyes"></div>
+            </div>
             <div className="flex flex-col items-center text-center mintcenter">
         
- 
 
            {isWLSaleActive ? (
             <>
@@ -158,10 +166,9 @@ const Hero = () => {
               </button>
             </>
           ) : (
-            <p className="textx">
+            <p className="mt-80 textx">
               {""}
-             
-              
+              Moonlist Sale is not active yet!
             </p>
           )}
 
@@ -227,7 +234,7 @@ const Hero = () => {
               </div>
 
               <h4 className="mt-4 font-semibold text-center text-white text">
-                {0.006} ETH{" "}
+                {0.0066} ETH{" "}
                 <span className="text-sm text-gray-300"> + GAS</span>
               </h4>
 

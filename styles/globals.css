@@ -173,8 +173,9 @@ legend{
  }
 
 .textx{
-  position: relative;
+  /* position: relative; */
   text-align: center;
+  top: 300%;
   left: 3%;
   font-weight: 300;
   font-size: x-large;
@@ -232,5 +233,12 @@ legend{
   height: 800px;
   background-position: center;
   /* border: 3px solid #73AD21; */
+}
+.eyes{
+  background-image: url(/images/Eyes.png);
+  width: 1848px;
+  height: 800px;
+  background-position: center;
+  
 }
 
